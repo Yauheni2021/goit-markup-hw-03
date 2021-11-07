@@ -101,7 +101,7 @@
 
   background: var(--accent-color);
   box-shadow: 0px 4px 4px var(--btn-shadow-color);
-  /* border-radius: 4px; */
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -246,4 +246,11 @@
 .cards-suplist {
   border: 1px solid var(--cards-border);
   box-sizing: border-box;
+}
+
+/* контейнер */
+.container {
+  width: 1200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
