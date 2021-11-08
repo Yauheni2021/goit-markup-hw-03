@@ -22,7 +22,22 @@
 }
 
 .section-list {
+  padding: 0;
+  margin: 0;
   list-style: none;
+  outline: 1px solid tomato;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  padding: 0;
+  margin: 0;
 }
 
 /*logo*/
@@ -86,19 +101,24 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   /* text-align: center; */
+  margin-bottom: 30px;
+  background-color: tomato;
   color: var(--primary-bg-color);
 }
 
 .hero-button {
+  display: inline-block;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87em;
   align-items: center;
+  margin-bottom: 200px;
   /* text-align: center; */
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--primary-bg-color);
-
+  min-width: 200px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px var(--btn-shadow-color);
   border-radius: 4px;
@@ -253,4 +273,18 @@
   width: 1200px;
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+/* Спрятанный заголовок */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
