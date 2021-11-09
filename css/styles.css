@@ -23,18 +23,25 @@
 
 .page-header {
   border: 1px solid #ececec;
+  background-color: var(--primary-bg-color);
+}
+
+.nav {
+  display: flex;
+  text-align: center;
 }
 
 .section-list {
   padding: 0;
   margin: 0;
   list-style: none;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .section-list.nav {
   display: flex;
-  /* margin-right: 94px; */
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .nav-item:not(:last-child) {
@@ -52,7 +59,7 @@
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
 }
 
 h1,
@@ -78,6 +85,12 @@ ul {
   text-decoration: none;
 
   color: var(--accent-color);
+}
+
+.nav .logo {
+  padding-bottom: 25px;
+  padding-top: 24px;
+  margin-right: 94px;
 }
 
 .logoheader {
@@ -131,7 +144,6 @@ ul {
   text-transform: uppercase;
   margin-top: 200px;
   margin-bottom: 30px;
-  background-color: tomato;
   color: var(--primary-bg-color);
 }
 
@@ -158,7 +170,7 @@ ul {
   color: var(--primary-bg-color);
 }
 
-/* future */
+/* feature */
 
 .section-list.feature {
   display: flex;
@@ -265,7 +277,18 @@ ul {
 
 /* подвал */
 
+.section-footer .logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .section-footer {
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--secondary-bg-color);
 }
 
@@ -312,6 +335,10 @@ ul {
   cursor: pointer;
 }
 
+.btn-items:not(:last-child) {
+  margin-right: 8px;
+}
+
 .secondary-button:hover,
 .secondary-button:focus {
   background-color: var(--accent-color);
@@ -327,6 +354,12 @@ ul {
   border-radius: 4px;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+}
+
+.section-list.btn {
+  display: flex;
+  /* justify-content: center; */
+  margin-bottom: 50px;
 }
 
 /* карточки */
