@@ -28,6 +28,12 @@
   outline: 1px solid tomato;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 1px solid teal;
+}
+
 h1,
 h2,
 h3,
@@ -35,9 +41,10 @@ h4,
 h5,
 h6,
 p,
-a {
-  padding: 0;
+ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /*logo*/
@@ -89,9 +96,10 @@ a {
 }
 /*герой*/
 
-.hero-section {
+.section.hero {
   background-color: var(--secondary-bg-color);
   text-align: center;
+  padding-bottom: 0px;
 }
 
 .hero-title {
@@ -100,7 +108,7 @@ a {
   line-height: 1.36em;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* text-align: center; */
+  margin-top: 200px;
   margin-bottom: 30px;
   background-color: tomato;
   color: var(--primary-bg-color);
@@ -114,7 +122,6 @@ a {
   line-height: 1.87em;
   align-items: center;
   margin-bottom: 200px;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   cursor: pointer;
   color: var(--primary-bg-color);
@@ -131,6 +138,11 @@ a {
 }
 
 /* future */
+
+.section-list.feature {
+  display: flex;
+}
+
 .section-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -156,10 +168,34 @@ a {
   line-height: 1.16em;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
 }
 
-/* команда */
+.section.projects {
+  padding-top: 0px;
+}
+
+.section-list.projects {
+  display: flex;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.section-item-projects:not(:last-child) {
+  margin-right: 30px;
+}
+
+/*  команда  */
+
+.section-list.about {
+  display: flex;
+}
+
+.workteam-list:not(:last-child) {
+  margin-right: 30px;
+}
 
 .workteam-subtitle {
   font-weight: 500;
@@ -178,7 +214,7 @@ a {
   color: var(--primary-text-color);
 }
 
-.section-about-team {
+.section.about {
   background-color: var(--bg-team-color);
 }
 
@@ -271,8 +307,10 @@ a {
 /* контейнер */
 .container {
   width: 1200px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Спрятанный заголовок */
