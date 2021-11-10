@@ -358,7 +358,7 @@ ul {
 
 .section-list.btn {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   margin-bottom: 50px;
 }
 
