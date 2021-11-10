@@ -22,8 +22,6 @@
 }
 
 .page-header {
-  /* display: flexbox;
-  justify-content: flex-end; */
   border-bottom: 1px solid #ececec;
   background-color: var(--primary-bg-color);
 }
@@ -62,6 +60,7 @@
 
 .section-list.header {
   display: flex;
+  align-items: center;
   margin-left: auto;
   padding-bottom: 32px;
   padding-top: 32px;
